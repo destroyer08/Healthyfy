@@ -70,8 +70,8 @@ class MyCronJob(CronJobBase):
     				print user_ids
     				self.send_notification(user_ids,notification_payload)
 
-    				# notice.is_visit = False
-    				# notice.save()
+    				notice.is_visit = False
+    				notice.save()
     			except:
     				print "Error"
     				pass
